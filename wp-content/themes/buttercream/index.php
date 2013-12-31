@@ -50,4 +50,3 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
-<?php get_footer(); ?>
