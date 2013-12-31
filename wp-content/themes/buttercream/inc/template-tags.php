@@ -124,8 +124,8 @@ function buttercream_posted_on() {
 	echo '<a href="' . get_permalink() . '" rel="bookmark" title="' . __( 'Permanent Link to' , 'buttercream' ) . get_the_title() . '">';
 
 	if( get_post_type() !== 'page' ) {
-		echo '<span class="post-month">' . get_the_time('M') . '</span> ';
-		echo '<span class="post-day">' . get_the_time('j') . '</span> ';
+		echo '<span class="post-month">' .  '</span> ';
+		echo '<span class="post-day">' . '</span> ';
 	} else {
 		echo '<span class="page-post-month">Page</span>';
 	}
