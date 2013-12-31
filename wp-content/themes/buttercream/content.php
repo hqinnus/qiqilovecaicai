@@ -27,23 +27,5 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( ' ' );
-				if ( $categories_list && buttercream_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php echo $categories_list; ?>
-			</span>
-			<?php endif; // End if categories ?>
 
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'buttercream' ), __( '1 Comment', 'buttercream' ), __( '% Comments', 'buttercream' ) ); ?></span>
-		<?php endif; ?>
-
-	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->
