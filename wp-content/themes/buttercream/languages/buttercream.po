@@ -112,7 +112,7 @@ msgid "Continue reading <span class=\"meta-nav\">&raquo;</span>"
 msgstr ""
 
 #: ../content.php:45
-msgid "Leave a comment"
+msgid ""
 msgstr ""
 
 #: ../content.php:45
